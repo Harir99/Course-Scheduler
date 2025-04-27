@@ -1,0 +1,75 @@
+default:
+  image: python:3.10.7
+  before_script:
+    - apt-get update
+    - apt-get install -y python3-pip
+    - apt-get install -y npm
+    - pip install jsonschema
+    - pip install Flask-Testing
+    - pip install pandas
+    - pip install pylint
+
+stages:
+  - test
+  - deploy
+
+lint_code:
+  stage: test
+  script:
+    - echo "--------LINTING FRONTEND CODE---------"
+    - cd course-scheduler-app
+    - npm install
+    - ./node_modules/.bin/eslint src
+    - echo "----FINISHED LINTING FRONTEND CODE----"
+    - cd ..
+    - echo "--------LINTING BACKEND CODE---------"
+    - pylint server/test.py server/app.py server/tests/test_functions.py server/tests/functional/test_app.py server/tests/unit/test_file.py
+    - echo "----FINISHED LINTING BACKEND CODE----"
+
+unit_tests:
+  stage: test
+  script:
+    - cd server
+    - echo "-------BACKEND UNIT TESTS STARTING---------"
+    - python3 test.py
+    - echo "-------BACKEND UNIT TESTS PASSED---------"
+    - cd ..
+    - cd course-scheduler-app
+    - npm install
+    - echo "------- FRONTEND UNIT TESTS STARTING---------"
+    - npm test
+    - echo "-------FRONT END UNIT TESTS PASSED---------"
+
+# build:
+#   stage: build
+#   script:
+#     - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client git -y )'
+#     - eval $(ssh-agent -s)
+#     - echo "$AZURE_VM_SSH_KEY" | tr -d '\r' | ssh-add -
+#     - mkdir -p ~/.ssh
+#     - chmod 700 ~/.ssh
+
+#     - ssh-keyscan 20.25.190.33 >> ~/.ssh/known_hosts
+#     - chmod 644 ~/.ssh/known_hosts
+
+#     - echo "-------BUILD STAGE STARTING---------"
+#     - ssh azureuser@20.25.190.33 'git pull https://dbiswas:glpat-ChdwssCMs-BXXdkhgFis@gitlab.socs.uoguelph.ca/eshortt cis3760-104-online.git'
+#     - ssh azureuser@20.25.190.33 'cd cis3760-104-online && chmod +x install.sh && ./install.sh'
+#     - echo "-------BUILD STAGE COMPLETED---------"
+#   when: on_success
+
+deploy:
+  stage: deploy
+  script:
+    - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client git -y )'
+    - eval $(ssh-agent -s)
+    - echo "$AZURE_VM_SSH_KEY" | tr -d '\r' | ssh-add -
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - ssh-keyscan 20.25.190.33 >> ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts
+    - ssh azureuser@20.25.190.33 'cd cis3760-104-online && git stash && git pull --no-edit https://dbiswas:glpat-ChdwssCMs-BXXdkhgFis@gitlab.socs.uoguelph.ca/eshortt/cis3760-104-online.git && git checkout main && git stash clear'
+    - echo "-------DEPLOY STAGE STARTING---------"
+    - ssh azureuser@20.25.190.33 'cd cis3760-104-online && chmod +x run-script.sh && ./run-script.sh'
+    - echo "-------DEPLOY STAGE FINISHED---------"
+  when: on_success
