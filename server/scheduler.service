@@ -1,0 +1,12 @@
+[Unit]
+Description=Scheduler API
+After=network.target
+
+[Service]
+User=azureuser
+WorkingDirectory=/home/azureuser/cis3760-104-online/server
+ExecStart=/home/azureuser/cis3760-104-online/server/venv/bin/gunicorn -b 127.0.0.1:5000 app:app
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

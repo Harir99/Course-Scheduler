@@ -1,0 +1,76 @@
+{
+    "type": "object",
+    "properties": {
+        "result": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "Term": {
+                        "type": "string"
+                    },
+                    "Status": {
+                        "type": "string"
+                    },
+                    "Section": {
+                        "type": "string"
+                    },
+                    "Location": {
+                        "type": "string"
+                    },
+                    "Lecture Days": {
+                        "type": "string"
+                    },
+                    "Lecture Time": {
+                        "type": "string"
+                    },
+                    "Lecture Location": {
+                        "type": "string"
+                    },
+                    "Seminar Days": {
+                        "type": "string"
+                    },
+                    "Seminar Time": {
+                        "type": "string"
+                    },
+                    "Seminar Location": {
+                        "type": "string"
+                    },
+                    "Lab Days": {
+                        "type": "string"
+                    },
+                    "Lab Time": {
+                        "type": "string"
+                    },
+                    "Lab Location": {
+                        "type": "string"
+                    },
+                    "Distance Education": {
+                        "type": "string"
+                    },
+                    "Exam Day": {
+                        "type": "string"
+                    },
+                    "Exam Time": {
+                        "type": "string"
+                    },
+                    "Exam Location": {
+                        "type": "string"
+                    },
+                    "Faculty": {
+                        "type": "string"
+                    },
+                    "Capacity": {
+                        "type": "string"
+                    },
+                    "Credits": {
+                        "type": "string"
+                    },
+                    "Academic Level": {
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+}

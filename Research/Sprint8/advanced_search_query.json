@@ -1,0 +1,31 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "search": {
+        "type": "object",
+        "properties": {
+            "semester": {
+                "type": "string"
+            },
+            "subject": {
+                "type": "string"
+            },
+            "days": {
+                "type": "array"
+            },
+            "start_time": {
+                "type": "string"
+            },
+            "end_time" : {
+                "type": "string"
+            },
+            "prof": {
+                "type": "string"
+            },
+            "de": {
+                "type": "boolean"
+            }
+        },
+        "required": ["semester", "subject", "days", "start_time", "end_time", "prof", "de"]
+    }
+}

@@ -1,0 +1,83 @@
+[
+    {
+        "Term": "Fall 2022",
+        "Status": "Open",
+        "Section": "ACCT*1220*0101 (6573) Intro Financial Accounting",
+        "Location": "Guelph",
+        "Meeting Info": {
+            "LEC": {
+                "Days": "Fri",
+                "Time": "08:30AM - 10:20AM",
+                "Location": "ROZH, Room 104"
+            },
+            "SEM": {
+                "Days": "Mon",
+                "Time": "04:30PM - 05:20PM",
+                "Location": "MCKN, Room 225"
+            },
+            "EXAM": {
+                "Days": "Tues",
+                "Time": "08:30AM - 10:30AM (2022/12/06)",
+                "Location": "Room TBA"
+            }
+        },
+        "Faculty": "P. Lassou",
+        "Capacity": "3 / 48",
+        "Credits": "0.50",
+        "Academic Level": "Undergraduate"
+    },
+    {
+        "Term": "Fall 2022",
+        "Status": "Open",
+        "Section": "ACCT*1220*0102 (6574) Intro Financial Accounting",
+        "Location": "Guelph",
+        "Meeting Info": {
+            "LEC": {
+                "Days": "Fri",
+                "Time": "08:30AM - 10:20AM",
+                "Location": "ROZH, Room 104"
+            },
+            "SEM": {
+                "Days": "Tues",
+                "Time": "08:30AM - 09:20AM",
+                "Location": "MCKN, Room 227"
+            },
+            "EXAM": {
+                "Days": "Tues",
+                "Time": "08:30AM - 10:30AM (2022/12/06)",
+                "Location": "Room TBA"
+            }
+        },
+        "Faculty": "P. Lassou",
+        "Capacity": "1 / 48",
+        "Credits": "0.50",
+        "Academic Level": "Undergraduate"
+    },
+    {
+        "Term": "Fall 2022",
+        "Status": "Open",
+        "Section": "ACCT*1220*0103 (6575) Intro Financial Accounting",
+        "Location": "Guelph",
+        "Meeting Info": {
+            "LEC": {
+                "Days": "Fri",
+                "Time": "08:30AM - 10:20AM",
+                "Location": "ROZH, Room 104"
+            },
+            "SEM": {
+                "Days": "Wed",
+                "Time": "04:30PM - 05:20PM",
+                "Location": "MCKN, Room 228"
+            },
+            "EXAM": {
+                "Days": "Tues",
+                "Time": "08:30AM - 10:30AM (2022/12/06)",
+                "Location": "Room TBA"
+            }
+        },
+        "Faculty": "P. Lassou",
+        "Capacity": "1 / 48",
+        "Credits": "0.50",
+        "Academic Level": "Undergraduate"
+    }
+]

@@ -1,0 +1,131 @@
+{
+  "appointments": [
+    {
+      "title": "ACCT*1220*DE01",
+      "full_title": "ACCT*1220*DE01 (6583) Intro Financial Accounting",
+      "day": [],
+      "location": "",
+      "start_time": [
+        0,
+        0
+      ],
+      "end_time": [
+        0,
+        0
+      ],
+      "de": true,
+      "color": "#009688"
+    },
+    {
+      "title": "ACCT*1220*DE01 EXAM",
+      "full_title": "ACCT*1220*DE01 (6583) Intro Financial Accounting",
+      "day": [
+        "3"
+      ],
+      "location": "TBA",
+      "start_time": [
+        "8",
+        "30"
+      ],
+      "end_time": [
+        "10",
+        "30"
+      ],
+      "de": true,
+      "color": "#F88A71"
+    },
+    {
+      "title": "CIS*3150*0101 LEC",
+      "full_title": "CIS*3150*0101 (7253) Theory of Computation",
+      "day": [
+        "3",
+        "5"
+      ],
+      "location": "MACN, Room 113",
+      "start_time": [
+        "16",
+        "0"
+      ],
+      "end_time": [
+        "17",
+        "20"
+      ],
+      "de": false,
+      "color": "#4D243D"
+    },
+    {
+      "title": "CIS*3150*0101 LAB",
+      "full_title": "CIS*3150*0101 (7253) Theory of Computation",
+      "day": [
+        "2"
+      ],
+      "location": "TBA",
+      "start_time": [
+        "16",
+        "30"
+      ],
+      "end_time": [
+        "17",
+        "20"
+      ],
+      "de": false,
+      "color": "#4D243D"
+    },
+    {
+      "title": "CIS*3150*0101 EXAM",
+      "full_title": "CIS*3150*0101 (7253) Theory of Computation",
+      "day": [
+        "4"
+      ],
+      "location": "TBA",
+      "start_time": [
+        "8",
+        "30"
+      ],
+      "end_time": [
+        "10",
+        "30"
+      ],
+      "de": false,
+      "color": "#F88A71"
+    },
+    {
+      "title": "CIS*3760*0101 LEC",
+      "full_title": "CIS*3760*0101 (7263) Software Engineering",
+      "day": [
+        "3",
+        "5"
+      ],
+      "location": "RICH, Room 2529",
+      "start_time": [
+        "8",
+        "30"
+      ],
+      "end_time": [
+        "9",
+        "50"
+      ],
+      "de": false,
+      "color": "#A98743"
+    },
+    {
+      "title": "CIS*3760*0101 LAB",
+      "full_title": "CIS*3760*0101 (7263) Software Engineering",
+      "day": [
+        "2"
+      ],
+      "location": "THRN, Room 2420",
+      "start_time": [
+        "11",
+        "30"
+      ],
+      "end_time": [
+        "13",
+        "20"
+      ],
+      "de": false,
+      "color": "#A98743"
+    }
+  ],
+  "conflicts": []
+}

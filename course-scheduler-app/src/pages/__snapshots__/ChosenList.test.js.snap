@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tests that chosen list component can be rendered 1`] = `
+<div>
+  <div>
+    <hr />
+     
+    <h4
+      className="text-purple"
+    >
+       Selected Courses
+    </h4>
+  </div>
+  <div
+    className="text-center scrollable card"
+  >
+    <div
+      className="list-group list-group-flush"
+      onKeyDown={[Function]}
+    >
+      <div
+        className="list-group-item"
+        data-rr-ui-event-key={null}
+        onClick={[Function]}
+      >
+        <div
+          className="card-body"
+        >
+          <p
+            className="card-text"
+          >
+            ACCT*1220*0101 (6573) Intro Financial Accounting
+          </p>
+          <button
+            className="btn btn-primary btn-sm"
+            disabled={false}
+            onClick={Array []}
+            style={
+              Object {
+                "backgroundColor": "#84428C",
+                "border": "#84428C",
+              }
+            }
+            type="button"
+            value="ACCT*1220*0101 (6573) Intro Financial Accounting"
+          >
+            Delete Course
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
